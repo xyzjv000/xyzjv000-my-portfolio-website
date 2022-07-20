@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+}
+.logo {
+    font-family: 'Alex Brush', cursive;
+}
+
+.navigation ul {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.navigation ul li {
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.navigation ul li, .contact p{
+    list-style: none;
+    font-size: .9rem;
+    color: #787878;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.navigation ul li:hover {
+    transition: .3s;
+    color: #286F6C;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact svg {
+    color: #286F6C;
+    padding: 5px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.active {
+    color: #286F6C !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+}
