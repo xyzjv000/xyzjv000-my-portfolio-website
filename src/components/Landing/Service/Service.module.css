@@ -1,0 +1,86 @@
+.serviceContainer {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    gap: 4rem;
+    padding: 6rem 0;
+    min-height: 60vh;
+}
+.serviceLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.serviceRight {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.serviceRight h1 {
+    font-size: 46px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    padding: 20px 0;
+    color: #373737;
+}
+
+.serviceRight div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px;
+    color: #797979;
+}
+
+
+/* SERVICE BOX */
+.serviceBox {
+    width: 85%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.__left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__left div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.__left div svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.__right {
+    flex: 2;
+    font-size: 22px;
+    font-weight: 600;
+    color: #373737;
+}
+
+.__center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
