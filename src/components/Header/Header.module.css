@@ -2,12 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 10vh;
+    background-color: #F8F7F1;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 .logo {
     font-family: 'Alex Brush', cursive;
+    margin-left: 5%;
 }
 
 .navigation ul {
@@ -40,6 +45,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 5%;
 }
 
 .contact svg {

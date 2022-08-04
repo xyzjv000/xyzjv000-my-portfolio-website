@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import styles from './Header.module.css';
 import CallSharpIcon from '@mui/icons-material/CallSharp';
 import NavItem from './NavItem';
-function Header() {
+function Header(props) {
   const [active, setActive] = useState('home');
   const navigationHandler = (event) => {
     const id = event.target.id;
     console.log(id);
     setActive(id);
+    props.selectItem(id);
   };
   return (
     <header className={styles.header}>

@@ -1,3 +1,122 @@
-.container {
-    height: 90vh;
+._container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F8F7F1
+}
+.left, .right {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}
+.left {
+    width: 500px;
+}
+
+.right {
+    flex: 1;
+    overflow: hidden;
+}
+
+.bakcgroundPaint {
+    position: absolute;
+    width: 80%;
+    left: 0;
+    top: 60%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.picture {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.greetings {
+    position: absolute;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: left;
+}
+.greetings h1{
+    font-size: 6rem;
+    color: #373737;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.greetings .sub {
+    color: #797979;
+    font-size: 2rem;
+    width: 60%;
+}
+
+.hireMe {
+    position: absolute !important;
+    bottom: 0 !important;
+    background-color: #229881  !important;
+    text-transform: capitalize !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    width: 200px !important;
+    border-radius: 40px !important;
+    transform: translateX(calc(50% - 500px)) !important;
+    top: 20p !important;
+    bottom: 40px !important;
+}
+
+.skills {
+    position: absolute;
+    right: 5%;
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box {
+    height: 1300px;
+    width: 600px;
+    background-color: #229881;
+    border-radius: 15px;
+    position: absolute;
+    right: -400px;
+    transform: translate(0, -50%) rotate(45deg);
+    z-index: 0;
+    border-radius: 20px;
+    top: 50%;
+}
+
+.aboutMe {
+    width: 60%;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #797979;
+}
+
+.aboutMe span {
+    color: #229881;
+    font-weight: 500;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #797979;
+}
+
+.email svg{
+    color: #229881;;
+}
+
+@keyframes spin {
+    
+    from {
+        transform:  translate(0, -50%) rotate(0deg);
+    }
+    to {
+        transform:  translate(0, -50%) rotate(360deg);
+    }
 }

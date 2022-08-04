@@ -1,11 +1,17 @@
-body {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F8F7F1;
+}
+
+html {
+  
+  scroll-behavior: smooth;
 }
 
 code {
@@ -14,5 +20,10 @@ code {
 
 
 .container {
-  height: 90vh;
+  height: 80vh;
+  position: relative;
+}
+
+.MuiButton-root {
+  font-family: 'Poppins', sans-serif !important;
 }

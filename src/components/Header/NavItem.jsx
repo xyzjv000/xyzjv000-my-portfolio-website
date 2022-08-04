@@ -9,7 +9,8 @@ function NavItem(props) {
           <li
             onClick={props.navigationHandler}
             id={item}
-            className={props.active === item && styles.active}
+            className={props.active === item ? styles.active : ''}
+            key={item}
           >
             {item}
           </li>
